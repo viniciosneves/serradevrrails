@@ -1,7 +1,16 @@
-<h1>Categories</h1>
+<div class="container">
+    <h1>Categories</h1>
 
-<ul>
-<% @categories.each do |cat| %>
-    <li><%= cat.id %> - <%= cat.name %></li>
-<% end %>
-</ul>
+    <table class="table">
+        <tr>
+            <td>ID</td>
+            <td>Nome</td>
+        </tr>
+    <% @categories.each do |cat| %>
+        <tr>
+            <td><%= cat.id %></td>
+            <td><%= cat.name %></td>
+        </tr>
+    <% end %>
+    </table>
+</div>
